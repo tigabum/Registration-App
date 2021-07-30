@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="dist/468c6c2c277a731e4499.home.css">
+    <title>Registration-App</title>
+</head>
+<body>
+    <nav class="navbar navbar-fixed-top navbar-inverse">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" data-toggle="collapse" data-target="#navbar" aria-expanded="false" class="navbar-toggle collapsed" aria-controls="navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        </button>
+                        <a href="/" class="navbar-brand">Event Registration </a>
+                 
+                </div>
+                <div id="navbar" class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="/">Home</a></li>
+                        <li><a href="status.html">Status</a></li>
+                        <li><a href="about.html">About</a></li>
+                    </ul>
+
+                </div>
+            </div>
+    </nav>
+    <div class="container">
+        <div class="form-area">
+            <h1 class="title">Training Registration</h1>
+            <form action="/register" method="POST" id="registrationForm">
+                <div class="form-group">
+                    <label for="username">Name*:</label>
+                    <input type="text" class="form-control" id="username" name="username">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email address*:</label>
+                    <input type="email" class="form-control" id="email" name="email">
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number*:</label>
+                    <input type="phone" class="form-control" id="phone" name="phone" placeholder="XXXX-XXX-XXX">
+                </div>
+                <div class="form-group">
+                    <label for="age">Age*:</label>
+                    <input type="number" class="form-control" id="age" name="age" min="10" max="25">
+                </div>
+                <div class="form-group">
+                    <label for="profession">I am a:</label>
+                    <select name="profession" id="profession" class="form-control">
+                            <option value="school">School Student</option>
+                            <option value="college">College Student</option>
+                            <option value="trainee">Trainee</option>
+                            <option value="employee">Employee</option>
+
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label >Experience Level:</label>
+                    <div>
+                        <div class="radio-inline">
+                            <label><input type="radio" name="experience" id="experience" value="1" checked>Beginner </label>
+                        </div>
+                        <div class="radio-inline">
+                            <label><input type="radio" name="experience" id="experience" value="2" checked>Intermidate </label>
+                        </div>
+                        <div class="radio-inline">
+                            <label><input type="radio" name="experience" id="experience" value="3" checked>Advanced </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="comment">What do you expect to learn from this event:</label>
+                    <textarea name="comment" id="comment" rows="5"></textarea>
+                </div>
+                <button type="submit" id="submit" class="btn btn-default">Submit</button>
+                <img src="./src/asset/images/loading.gif"  alt="loading" class="loading-indicator hidden" id="loadingIndicator">
+            </form>
+        </div>
+
+    </div>
+
+    <!-- <script src="dist/home.js"></script> -->
+    <script src="./dist/468c6c2c277a731e4499.home.js" ></script>
+</body>
+</html>
